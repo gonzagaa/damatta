@@ -27,35 +27,113 @@
     z-index: 5;
 }
 
+#home .video video {
+    display: none;
+}
+
+#home .content img.logo {
+
+}
+
+#home .content h1 {
+    color: #fff;
+    font-weight: 300;
+}
+
+#home .content h3 {
+    font-size: 1.6rem;
+    color: var(--paragraphy);
+    font-weight: 400;
+}
+
+#home .content .buttons {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#home .content a button {
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+}
+
+#home .content a:nth-child(1) button {
+    background-color: transparent;
+    outline: 1px solid var(--white);
+    color: var(--white);
+}
+
+#home .content a:nth-child(2) button {
+    background: var(--gradient);
+    color: var(--white);
+}
+
 @media (min-width: 1080px) {  
-    header#home  video {
+    header#home .video video {
         display: inherit;
+    }
+
+    header#home .wrapper {
+      width: min(300rem, 100%);
+    }
+
+    header#home .content {
+        text-align: center;
+        align-items: center;
+
+        position: relative;
+        z-index: 2;
+    }
+
+    header#home .content img.logo {
+        width: 35rem;
     }
    
     header#home video {    
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
         object-fit: cover;
         width: 100%;
         height: 100vh;
-        filter: brightness(.5);
+        filter: brightness(.3);
+        mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
     }
 
     header#home .video {
         position: relative;
     }
 
-    header#home .video::before {
+    header#home .content h1 {
+        position: absolute;
+        font-size: 4rem;
+        line-height: 1.3;
+        bottom: 4rem;
+        left: 1rem;
+        width: 30%;
+        text-align: left;
+    }
+
+    header#home .content .buttons {
+        position: absolute;
+        bottom: 4rem;
+        right: 1rem;
+        gap: 2rem;
+    }
+
+    /* header#home .video::before {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 0;
-        object-fit: cover;
+        bottom: 0;
+        z-index: 1;
         width: 100%;
         height: 100vh;
-        background: linear-gradient(to bottom, #);
-    }
+        background: linear-gradient(to bottom, transparent 70%, #252526);
+    } */
 }
    

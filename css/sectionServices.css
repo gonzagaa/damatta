@@ -1,0 +1,137 @@
+#services {
+    background: var(--gray);
+    position: relative;
+}
+
+#services header {
+    text-align: left;
+}
+
+#services .content span.span {
+    font-size: 1.6rem;
+    color: var(--orange);
+    font-weight: 400;
+}
+
+#services h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 4rem;
+}
+
+#services .cards {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#services .cards .card {
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: #1e1e1e;
+    text-align: left;
+}
+
+#services .cards .card h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 500;
+
+    position: relative;
+}
+
+#services .cards .card h3::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    left: -1.5rem;
+    height: 6rem;
+    background: var(--orange);
+    top: -4rem;
+}
+
+#services .cards .card p {
+    color: var(--paragraphy);
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+#services .cards .card a {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    width: max-content;
+
+    transition: all 200ms ease-in-out;
+}
+
+#services .cards .card a:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+#services .cards .card a:hover ion-icon {
+    transform: translateX(8px);
+}
+
+#services .cards .card a ion-icon {
+    color: var(--orange);
+
+    transition: all 200ms ease-in-out;
+}
+
+#services img.iconeDamatta {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+    section#services .content header {
+        text-align: center;
+    }
+
+    section#services img.iconeDamatta {
+        display: inherit;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        filter: blur(1.5);
+        opacity: .2;
+    }
+
+    section#services .content header h2 {
+        margin-bottom: 8rem;
+    }
+
+    section#services .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        z-index: 2;
+    }
+
+    section#services .content .cards .card {
+        background: rgba(34, 34, 34, 0.8);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(83, 83, 83, 0.3);
+    }
+}
