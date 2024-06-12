@@ -1,4 +1,4 @@
-#topic {
+.topic {
     background: var(--gray);
     position: relative;
 
@@ -8,11 +8,11 @@
     overflow: hidden;
 }
 
-#topic .text {
+.topic .text {
     text-align: left;
 }
 
-#topic .text h2 {
+.topic .text h2 {
     margin-top: .5rem;
     font-size: 2.8rem;
     color: var(--white);
@@ -21,23 +21,23 @@
     margin-bottom: 1rem;
 }
 
-#topic.um .text h2 span {
+#service-um .text h2 span {
     color: var(--orange);
 }
 
-#topic.dois .text h2 span {
+#service-dois .text h2 span {
     color: var(--blue);
 }
 
-#topic.tres .text h2 span {
+#service-tres .text h2 span {
     color: var(--yellow);
 }
 
-#topic.quatro .text h2 span {
+#service-quatro .text h2 span {
     color: var(--orange);
 }
 
-#topic .text h3 {
+.topic .text h3 {
     color: var(--paragraphy);
     font-size: 1.6rem;
     line-height: 1.6;
@@ -46,11 +46,11 @@
     margin-bottom: 2rem;
 }
 
-#topic .text h3 span {
+.topic .text h3 span {
     color: #cccccc;
 }
 
-#topic .text .topics {
+.topic .text .topics {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,7 +61,7 @@
     margin-bottom: 3rem;
 }
 
-#topic .text .topics p {
+.topic .text .topics p {
     color: var(--paragraphy);
     font-weight: 300;
 
@@ -70,69 +70,69 @@
     align-items: center;
 }
 
-#topic .text .topics p ion-icon {
+.topic .text .topics p ion-icon {
     font-size: 1.2rem;
 }
 
-#topic.um .text .topics p ion-icon {
+#service-um .text .topics p ion-icon {
     color: var(--orange);
 }
 
-#topic.dois .text .topics p ion-icon {
+#service-dois .text .topics p ion-icon {
     color: var(--blue);
 }
 
-#topic.tres .text .topics p ion-icon {
+#service-tres .text .topics p ion-icon {
     color: var(--yellow);
 }
 
-#topic.quatro .text .topics p ion-icon {
+#service-quatro .text .topics p ion-icon {
     color: var(--orange);
 }
 
-#topic .image img {
+.topic .image img {
     width: 100%;
 }
 
 @media (min-width: 1080px) {    
-    section#topic {
+    section.topic {
         padding-block: 0;
         max-height: 100vh;
         overflow: hidden;
     }
 
-    section#topic.um {
+    section#service-um {
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
-    section#topic.dois {
+    section#service-dois {
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
-    section#topic.tres {
+    section#service-tres {
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
-    section#topic.quatro {
+    section#service-quatro {
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
-    section#topic.dois .content,
-    section#topic.quatro .content {
+    section#service-dois .content,
+    section#service-quatro .content {
         grid-template-areas: "a b";
     }
 
-    section#topic.dois .image,
-    section#topic.quatro .image {
+    section#service-dois .image,
+    section#service-quatro .image {
         grid-area: a;
     }
 
-    section#topic .content {
+    section.topic .content {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-    section#topic .wrapper {
+    section.topic .wrapper {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -140,38 +140,38 @@
         margin-top: 8rem;
     }
 
-    section#topic .text {
+    section.topic .text {
         width: 70%;
     }
 
-    section#topic .text h2 {
+    section.topic .text h2 {
         font-size: 3.5rem;
         color: var(--white);
         font-weight: 700;
     }
 
-    section#topic .wrapper .text h3 {
+    section.topic .wrapper .text h3 {
         font-size: 1.6rem;
         margin-bottom: 3rem;
 
         font-weight: 400;
     }
 
-    section#topic .wrapper .text p {
+    section.topic .wrapper .text p {
         font-size: 1.6rem;
         color: var(--white);
 
         font-weight: 400;
     }
 
-    section#topic .text .topics {
+    section.topic .text .topics {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         gap: 1rem;
     }
 
-    section#topic .image img {
+    section.topic .image img {
         aspect-ratio: 12/16;
         height: 100%;
         object-fit: cover;
@@ -179,37 +179,37 @@
 }
 
 @media (min-width: 1700px) {
-    section#topic .wrapper {
+    section.topic .wrapper {
         margin-top: 16rem;
     }
 
-    section#topic .text h2 {
+    section.topic .text h2 {
         font-size: 4rem;
     }
 
-    section#topic .wrapper .text h3 {
+    section.topic .wrapper .text h3 {
         font-size: 1.8rem;
     }
 
-    section#topic .wrapper .text p {
+    section.topic .wrapper .text p {
         font-size: 1.8rem;
     }
 }
 
 @media (min-width: 1700px) {
-    section#topic .wrapper {
+    section.topic .wrapper {
         margin-top: 18rem;
     }
 
-    section#topic .text h2 {
+    section.topic .text h2 {
         font-size: 4.5rem;
     }
 
-    section#topic .wrapper .text h3 {
+    section.topic .wrapper .text h3 {
         font-size: 2.2rem;
     }
 
-    section#topic .wrapper .text p {
+    section.topic .wrapper .text p {
         font-size: 2rem;
     }
 }
