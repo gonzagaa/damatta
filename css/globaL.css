@@ -10,15 +10,16 @@
     font-size: 62.5%;
     --nav-height: 7.2rem;
 
-    --orange: #f95300;
     --gray: #252526;
     --white: #f1f1f1;
-    --paragraphy: #7e7e7e;
+    --paragraphy: #929292;
 
+    --orange: #f95300;
     --gradient: linear-gradient(45deg, #f95300, #CB4400);
-    
-    --color-black: #252525;
-    --color-white: #F6F6FB;
+    --blue: #007cf7;
+    --gradient-blue: linear-gradient(45deg, #007cf7, #0052A4): 
+    --yellow: #f4c121;
+    --gradient-yellow: linear-gradient(45deg, #f4c121, #C39507): 
 }
 
 html {

@@ -1,0 +1,141 @@
+#topic {
+    background: var(--gray);
+    position: relative;
+}
+
+#topic .text {
+    text-align: left;
+}
+
+#topic .text h2 {
+    margin-top: .5rem;
+    font-size: 2.8rem;
+    color: var(--white);
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+}
+
+#topic.um .text h2 span {
+    color: var(--orange);
+}
+
+#topic.dois .text h2 span {
+    color: var(--blue);
+}
+
+#topic.tres .text h2 span {
+    color: var(--yellow);
+}
+
+#topic .text h3 {
+    color: var(--paragraphy);
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-weight: 300;
+
+    margin-bottom: 2rem;
+}
+
+#topic .text .topics {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: left;
+    align-items: start;
+
+    margin-bottom: 3rem;
+}
+
+#topic .text .topics p {
+    color: var(--paragraphy);
+    font-weight: 300;
+}
+
+#topic .image img {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {    
+    section#topic {
+        padding-block: 0;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    section#topic.um {
+        background: var(--gradient);
+        background: linear-gradient(to bottom, #252526, #222222);
+    }
+
+    section#topic.dois {
+        background: linear-gradient(45deg, #007cf7, #0052A4);
+        background: linear-gradient(to bottom, #252526, #222222);
+    }
+
+    section#topic.tres {
+        background: linear-gradient(45deg, #f4c121, #C39507);
+        background: linear-gradient(to bottom, #252526, #222222);
+    }
+
+    section#topic.dois .content {
+        grid-template-areas: "a b";
+    }
+
+    section#topic.dois .image {
+        grid-area: a;
+    }
+
+    section#topic .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#topic .wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        transform: translateY(20rem);
+    }
+
+    section#topic .text {
+        width: 70%;
+    }
+
+    section#topic .text h2 {
+        font-size: 4rem;
+        color: var(--white);
+        font-weight: 700;
+    }
+
+    section#topic .wrapper .text h2 span {
+        color: var(--white);
+    }
+
+    section#topic .wrapper .text h3 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: var(--white);
+
+        font-weight: 400;
+    }
+
+    section#topic .wrapper .text p {
+        font-size: 1.8rem;
+        color: var(--white);
+
+        font-weight: 400;
+    }
+
+    section#topic .text .topics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#topic .image img {
+        aspect-ratio: 12/16;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -85,10 +85,6 @@ nav path {
   margin-left: -1rem;
 }
 
-nav#navigation.scroll .logo img {
-  filter: brightness(0) invert(100%);
-}
-
 nav button {
   background: none;
   border: none;
@@ -298,7 +294,7 @@ body.menu-expanded nav#navigation.scroll path {
     }
 
     nav#navigation.scroll .menu ul li a {
-      color: var(--color-white);
+      color: var(--white);
       opacity: .7;
     }
 
@@ -321,7 +317,7 @@ body.menu-expanded nav#navigation.scroll path {
     }
 
     nav#navigation.scroll .menu li a::after {
-      background-color: var(--color-white);
+      background-color: var(--orange);
     }
   
     nav#navigation .menu li a:hover::after {
