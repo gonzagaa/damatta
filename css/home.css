@@ -8,11 +8,14 @@
 
     position: relative;
     z-index: 2;
-    background: var(--green-white);
+    background-image: url(../assets/maquinapesadamobile.png);
+    background-position-x: 50%;
+    background-position-y: 30%;
 }
 
 
 #home .content .image {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,8 +38,7 @@
     top: 0;
 
     /* From https://css.glass */
-    background: rgba(0, 0, 0, 0.394);
-    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.549);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -136,6 +138,10 @@
         position: relative;
     } */
 
+    header#home {
+        background-image: none;
+    }
+
     header#home .wrapper {
       width: min(300rem, 100%);
     }
@@ -189,6 +195,7 @@
     }
 
     header#home .content .image {
+        display: initial;
         position: absolute;
         top: 0;
         left: 0;
