@@ -119,18 +119,12 @@
 #suporte .ajuda a button img {
     width: 3rem;
 }
-
-@media (min-width: 768px) {
-    .wrapper {
-      width: min(80rem, 100%);
-    }
-}
   
   @media (min-width: 1080px) {
-  .wrapper {
-        width: min(140rem, 100%);
+    section#suporte {
+        padding-top: 16rem;
     }
-
+    
     section#suporte .content {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr 2fr;
@@ -148,6 +142,7 @@
 
     section#suporte .image img {
         aspect-ratio: 16/7;
+        height: 100%;
     }
 
     section#suporte .ajuda {
