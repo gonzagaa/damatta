@@ -5,6 +5,7 @@
     display: none;
 
     padding-bottom: 16rem;
+    overflow: hidden;
 }
 
 #servicesDesktop .wrapper {
@@ -56,7 +57,7 @@
     background-position: center;
     transition: all 500ms ease-in-out;
 
-    height: 60vh;
+    height: 70vh;
 
     display: flex;
     align-items: start;
@@ -95,9 +96,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: inherit; /* Herda o background da box */
+    background: inherit; 
     filter: brightness(.5);
-    z-index: 1; /* Garante que o pseudoelemento fique abaixo do conteúdo */
+    z-index: 1; 
     transition: all 500ms ease-in-out;
 }
 
@@ -106,7 +107,7 @@
 }
 
 #servicesDesktop .container .box > * {
-    position: relative; /* Garante que o conteúdo fique acima do pseudoelemento */
+    position: relative; 
     z-index: 2;
 }
 
@@ -145,22 +146,12 @@
 
 #servicesDesktop .container .box .additional-content {
     transition: top 500ms ease-in-out;
-    z-index: 3; /* Acima do background mas abaixo do conteúdo ao mesmo tempo */
-    display: none; /* Esconde por padrão */
+    z-index: 3; 
+    display: none; 
 }
 
 #servicesDesktop .container .box:hover .additional-content {
-    display: block; /* Mostra o conteúdo */
-}
-
-#servicesDesktop .container .box h3,
-#servicesDesktop .container .box .additional-content {
-    transition: all 500ms ease-in-out;
-}
-
-#servicesDesktop .container .box:hover h3,
-#servicesDesktop .container .box .additional-content {
-    transform: translateY(-50px); /* Move o título para cima quando em hover */
+    display: block; 
 }
 
 

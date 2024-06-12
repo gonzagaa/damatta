@@ -1,6 +1,9 @@
 #topic {
     background: var(--gray);
     position: relative;
+
+    padding-block: 0;
+    padding-bottom: 8rem;
 }
 
 #topic .text {
@@ -28,6 +31,10 @@
     color: var(--yellow);
 }
 
+#topic.quatro .text h2 span {
+    color: var(--orange);
+}
+
 #topic .text h3 {
     color: var(--paragraphy);
     font-size: 1.8rem;
@@ -37,10 +44,15 @@
     margin-bottom: 2rem;
 }
 
+#topic .text h3 span {
+    color: #cccccc;
+}
+
 #topic .text .topics {
     display: flex;
-    flex-direction: column;
-    gap: .5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
     text-align: left;
     align-items: start;
 
@@ -50,6 +62,30 @@
 #topic .text .topics p {
     color: var(--paragraphy);
     font-weight: 300;
+
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+#topic .text .topics p ion-icon {
+    font-size: 1.2rem;
+}
+
+#topic.um .text .topics p ion-icon {
+    color: var(--orange);
+}
+
+#topic.dois .text .topics p ion-icon {
+    color: var(--blue);
+}
+
+#topic.tres .text .topics p ion-icon {
+    color: var(--yellow);
+}
+
+#topic.quatro .text .topics p ion-icon {
+    color: var(--orange);
 }
 
 #topic .image img {
@@ -64,25 +100,28 @@
     }
 
     section#topic.um {
-        background: var(--gradient);
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
     section#topic.dois {
-        background: linear-gradient(45deg, #007cf7, #0052A4);
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
     section#topic.tres {
-        background: linear-gradient(45deg, #f4c121, #C39507);
         background: linear-gradient(to bottom, #252526, #222222);
     }
 
-    section#topic.dois .content {
+    section#topic.quatro {
+        background: linear-gradient(to bottom, #252526, #222222);
+    }
+
+    section#topic.dois .content,
+    section#topic.quatro .content {
         grid-template-areas: "a b";
     }
 
-    section#topic.dois .image {
+    section#topic.dois .image,
+    section#topic.quatro .image {
         grid-area: a;
     }
 
@@ -96,7 +135,7 @@
         align-items: center;
         flex-direction: column;
         justify-content: start;
-        transform: translateY(20rem);
+        margin-top: 8rem;
     }
 
     section#topic .text {
@@ -104,33 +143,30 @@
     }
 
     section#topic .text h2 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         color: var(--white);
         font-weight: 700;
     }
 
-    section#topic .wrapper .text h2 span {
-        color: var(--white);
-    }
-
     section#topic .wrapper .text h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 3rem;
-        color: var(--white);
 
         font-weight: 400;
     }
 
     section#topic .wrapper .text p {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: var(--white);
 
         font-weight: 400;
     }
 
     section#topic .text .topics {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 1rem;
     }
 
     section#topic .image img {
