@@ -37,7 +37,7 @@
 
 #topic .text h3 {
     color: var(--paragraphy);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     font-weight: 300;
 
@@ -173,5 +173,23 @@
         aspect-ratio: 12/16;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+@media (min-width: 1700px) {
+    section#topic .wrapper {
+        margin-top: 16rem;
+    }
+
+    section#topic .text h2 {
+        font-size: 4rem;
+    }
+
+    section#topic .wrapper .text h3 {
+        font-size: 1.8rem;
+    }
+
+    section#topic .wrapper .text p {
+        font-size: 1.8rem;
     }
 }

@@ -97,3 +97,13 @@
         margin-top: initial;
     }
 }
+
+@media (min-width: 1400px) {
+    section#sobre .text h3 {
+        font-size: 3rem;
+    }
+    
+    section#sobre .text p {
+        font-size: 2rem;
+    }
+}

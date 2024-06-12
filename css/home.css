@@ -218,7 +218,14 @@
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(0, 0, 0, 0.3);
     }
-    
-
 }
-   
+
+@media (min-width: 1400px) {
+    header#home .content .text-content h1 {
+        font-size: 4.5rem;
+    }
+
+    header#home .content .text-content p {
+        font-size: 2.2rem;
+    }
+}
