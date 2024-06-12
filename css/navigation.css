@@ -73,11 +73,11 @@ nav .wrapper {
 }
 
 nav button path {
-  stroke: var(--green-white);
+  stroke: var(--orange);
 }
 
 nav path {
-  stroke: var(--green-white);
+  stroke: var(--orange);
 }
 
 .logo img {
@@ -102,7 +102,7 @@ nav.scroll {
 }
 
 nav#navigation.scroll path {
-  stroke: var(--green-white);
+  stroke: var(--orange);
 }
 
 
@@ -202,7 +202,7 @@ body.menu-expanded .menu img.logo {
 }
 
 .menu .button {
-  background-color: var(--secondary-color);
+  background-color: var(--orange);
   border-radius: 4rem;
 
   display: inline-block;
@@ -232,11 +232,11 @@ body.menu-expanded nav button {
 }
 
 body.menu-expanded button path {
-  stroke: var(--green-white);
+  stroke: var(--orange);
 }
 
 body.menu-expanded nav#navigation.scroll path {
-  stroke: var(--green-white);
+  stroke: var(--orange);
 }
 
 /* RESPONSIVE =================== */
