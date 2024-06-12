@@ -1,6 +1,7 @@
 #services {
     background: var(--gray);
     position: relative;
+    overflow: hidden;
 }
 
 #services header {

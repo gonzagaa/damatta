@@ -1,6 +1,7 @@
 #sobre {
     background: var(--gray);
     position: relative;
+    overflow: hidden;
 }
 
 #sobre header {
