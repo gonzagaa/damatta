@@ -193,3 +193,21 @@
         font-size: 1.8rem;
     }
 }
+
+@media (min-width: 1700px) {
+    section#topic .wrapper {
+        margin-top: 18rem;
+    }
+
+    section#topic .text h2 {
+        font-size: 4.5rem;
+    }
+
+    section#topic .wrapper .text h3 {
+        font-size: 2.2rem;
+    }
+
+    section#topic .wrapper .text p {
+        font-size: 2rem;
+    }
+}

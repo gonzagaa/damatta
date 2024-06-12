@@ -229,3 +229,13 @@
         font-size: 2.2rem;
     }
 }
+
+@media (min-width: 1700px) {
+    header#home .content .text-content h1 {
+        font-size: 5rem;
+    }
+
+    header#home .content .text-content p {
+        font-size: 2.5rem;
+    }
+}
