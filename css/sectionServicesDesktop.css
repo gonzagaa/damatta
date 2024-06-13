@@ -74,19 +74,19 @@
 }
 
 #servicesDesktop .container .box:nth-child(1) {
-    background-image: url(../assets/servicosengenharia.jpg);
+    background-image: url(../assets/servicosengenharia.webp);
 }
 
 #servicesDesktop .container .box:nth-child(2) {
-    background-image: url(../assets/servicosmaquinapesada.jpg);
+    background-image: url(../assets/servicosmaquinapesada.webp);
 }
 
 #servicesDesktop .container .box:nth-child(3) {
-    background-image: url(../assets/usinafotovoltatica.jpg);
+    background-image: url(../assets/usinafotovoltatica.webp);
 }
 
 #servicesDesktop .container .box:nth-child(4) {
-    background-image: url(../assets/terraplanagem.jpg);
+    background-image: url(../assets/terraplanagem.webp);
 }
 
 #servicesDesktop .container .box::before {
