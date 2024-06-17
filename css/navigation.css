@@ -64,6 +64,8 @@ nav {
   z-index: 100;
 
   transition: all 300ms ease-in-out;
+
+  border-bottom: 2px solid #4f4f4f;
 }
 
 nav .wrapper {
@@ -152,6 +154,9 @@ body.menu-expanded .menu {
   box-shadow: -5px 0 30px #00000023;
 
   border-radius: 0 0 0 3rem;
+
+  border-left: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
 }
 
 .menu ul:nth-child(1) {
@@ -265,7 +270,7 @@ body.menu-expanded nav#navigation.scroll path {
     }
 
     nav#navigation {
-      border-bottom: 1px solid var(--primary-color);
+      border-bottom: 2px solid #4f4f4f;
     }
   
     nav#navigation .menu {
