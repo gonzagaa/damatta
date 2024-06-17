@@ -94,6 +94,38 @@
     width: 100%;
 }
 
+.topic a button {
+    border: none;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: var(--white);
+    font-weight: 500;
+
+    transition: all 200ms ease-in-out;
+}
+
+.topic a button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+#service-um .text a button,
+#service-quatro .text a button {
+    background: var(--orange);
+}
+
+#service-dois .text a button {
+    background: var(--blue);
+}
+
+#service-tres .text a button {
+    background: var(--yellow);
+}
+
+
+
+
 @media (min-width: 1080px) {    
     section.topic {
         padding-block: 0;
