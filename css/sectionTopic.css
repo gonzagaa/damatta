@@ -97,6 +97,7 @@
 .topic a button {
     border: none;
     margin-top: 1rem;
+    margin-bottom: 3rem;
     padding: 1rem 2rem;
     border-radius: 1rem;
     color: var(--white);
